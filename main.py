@@ -88,5 +88,5 @@ async def on_message(message): # on_message() event : when the bot has recieved 
         await message.channel.send("https://kkutu.co.kr/")    
 
 
-
-client.run('NzAzOTQ4MTU2OTAzMzU4NTU0.XqWA1w.I-dLJUig37J73_VFdJrw7vfuTIo')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
